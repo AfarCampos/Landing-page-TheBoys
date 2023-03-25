@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-*{
+
+* {
     font-family: ubuntu;
     margin: 0;
     padding: 0;
@@ -8,65 +9,60 @@
     text-decoration: none;
 }
 
-body{
+body {
     background: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 25px 48px;
 }
 
-header .logo{
+header .logo {
     width: 150px;
-} 
+}
 
-.navigation ul{
+.navigation ul {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     color: #ffff;
     font-size: 18px;
-    padding-bottom: 5px ;
+    padding-bottom: 5px;
     border-bottom: 2px solid transparent;
     transition: all .6s;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     border-bottom: 2px solid #138ecc;
 }
 
-.navigation ul li a:visited{
-    color: white; 
+.navigation ul li a:visited {
+    color: white;
 }
 
-.navigation .search{
+.navigation .search {
     width: 22px;
     cursor: pointer;
     filter: invert(1);
 }
 
-.navigation .perfil{
+.navigation .perfil {
     width: 40px;
     height: 40px;
     cursor: pointer;
     border-radius: 17px;
 }
 
-
-
-
-
-
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,25 +70,40 @@ main{
     margin-left: 1.5em;
 }
 
-main section{
+main section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 2.5em;
 }
 
-main section .logoboys{
+main section .logoboys {
     width: 35em;
-    margin:  3em 0;
+    margin: 3em 0;
 }
 
-main section .btn-box{
+main section .tab {
     display: flex;
-    align-items:  center;
+    align-items: center;
     gap: 20px;
 }
 
-.btn-box .btn{
+.tab button.active {
+    background-color: #2d3846;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tab .tablinks {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 50%;
     padding: 20px 45px;
     background: #425265;
     color: #ffff;
@@ -101,20 +112,16 @@ main section .btn-box{
     transition: all .3s;
 }
 
-.btn-box .btn:hover{
+.tab .tablinks:hover {
     background-color: #2d3846;
 }
 
-.btn-box .btn:focus{
-    background-color: #2d3846;
-}
-
-main section .text{
+main section .text {
     color: #ffff;
     line-height: 22px;
 }
 
-.btn-box2{
+.btn-box2 {
     display: flex;
     align-items: center;
     color: #fff;
@@ -129,17 +136,17 @@ main section .text{
     transition: all .3s;
 }
 
-.btn-box2:hover{
-    background:#138ecc;
+.btn-box2:hover {
+    background: #138ecc;
 }
 
-.btn-box2 .play{
+.btn-box2 .play {
     width: 1.4em;
     filter: invert(1);
 
 }
 
-footer .cards{
+footer .cards {
     display: flex;
     align-items: center;
     flex-flow: row;
@@ -147,7 +154,7 @@ footer .cards{
     margin-top: 1.5em;
 }
 
-footer .cards .card{
+footer .cards .card {
     height: 180px;
     max-width: 300px;
     box-shadow: 12px 0px 32px 2px black;
@@ -157,16 +164,16 @@ footer .cards .card{
     overflow: hidden;
 }
 
-footer .cards .card img{
+footer .cards .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.cards .card:hover{
+.cards .card:hover {
     transform: translateY(-16px) rotate(3deg);
 }
 
-.cards .card:hover ~ .card{
+.cards .card:hover~.card {
     transform: translateX(140px)
 }

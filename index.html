@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>SlouKrad - The Boys</title>
 </head>
+
 <body>
+
     <header>
         <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
         <nav class="navigation">
@@ -16,20 +20,45 @@
                 <li><a href="#">filmes</a></li>
                 <li><a href="#">séries</a></li>
                 <li><a href="#">infantis</a></li>
-                <img src="img/search.png" alt="Pesquisa" class="search"/>
-                <img src="img/perfil.png" alt="Perfil" class="perfil"/>
+                <img src="img/search.png" alt="Pesquisa" class="search" />
+                <img src="img/perfil.png" alt="Perfil" class="perfil" />
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <img src="img/theboysLogo.png" alt="logo the boys" class="logoboys">
-            <div class="btn-box">
+            <!-- <div class="btn-box">
                 <a href="#" class="btn">Temporada 1</a>
                 <a href="#" class="btn">Temporada 2</a>
                 <a href="#" class="btn">Temporada 3</a>
+            </div> -->
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')">Temporada 1</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Temporada 2</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')">Temporada 3</button>
             </div>
-            <p class="text">In a world where superheroes embrace the darker side of their massive celebrity and fame, THE BOYS centers on a group of vigilantes known informally as “The Boys,” who set out to take down corrupt superheroes with no more than their blue collar grit and a willingness to fight dirty.</p>
+
+            <div id="Tab1" class="tabcontent">
+                <p class="text">In a world where superheroes embrace the darker side of their massive celebrity and
+                    fame, THE BOYS centers on a group of vigilantes known informally as “The Boys,” who set out to take
+                    down corrupt superheroes with no more than their blue collar grit and a willingness to fight dirty.
+                </p>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <p class="text">All Episodes Available. In a more intense Season 2 of THE BOYS, Butcher, Hughie and the
+                    team reel from their losses in Season 1. On the run from the law, they struggle to fight back
+                    against the Superheroes. Meanwhile Vought, the hero management company, cashes in on the panic over
+                    Supervillains, and a new hero, Stormfront, shakes up the company and challenges an already unstable
+                    Homelander.</p>
+            </div>
+            <div id="Tab3" class="tabcontent">
+                <p class="text">It’s been a year of calm. Homelander’s subdued. Butcher works for the government,
+                    supervised by Hughie of all people. But both men itch to turn this peace and quiet into blood and
+                    bone. So when The Boys learn of a mysterious Anti-Supe weapon, it sends them crashing into the
+                    Seven, starting a war, and chasing the legend of the first Superhero: Soldier Boy.</p>
+            </div>
             <div class="btn-box2">
                 <img src="img/botao-play.png" alt="botão play" class="play">
                 <div>
@@ -47,5 +76,7 @@
             <div class="card"><img src="img/estrela.jpg" alt="imagens"></div>
         </section>
     </footer>
+    <script src="script.JS"></script>
 </body>
+
 </html>
