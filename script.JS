@@ -10,5 +10,18 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    if (tabName == "Tab1"){
+      document.body.style.background = "url(img/bgT1.jpg)"
+    }
+
+    if (tabName == "Tab2"){
+      document.body.style.background = "url(img/bgT2.jpg)"
+    }
+
+    if (tabName == "Tab3"){
+      document.body.style.background = "url(img/bgT3.jpg)"
+    }
+    
   }
-  document.getElementsByClassName("tablinks")[0].click();
+  document.getElementsByClassName("tablinks")[0].click()
